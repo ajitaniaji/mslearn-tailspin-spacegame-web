@@ -15,9 +15,9 @@ steps:
     version: '6.x'
 
 - task: Npm@1
-  command: 'install'
   displayName: 'Run npm install'
   inputs:
+    command: 'install'
     verbose: false
 
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
