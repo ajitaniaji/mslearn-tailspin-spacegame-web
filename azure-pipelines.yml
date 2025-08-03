@@ -15,6 +15,7 @@ steps:
     version: '6.x'
 
 - task: Npm@1
+  command: 'install'
   displayName: 'Run npm install'
   inputs:
     verbose: false
